@@ -298,7 +298,7 @@ class _BMiScreenState extends State<BMiScreen> {
 
                   width: double.infinity,
                    height: 60,
-                  child: MaterialButton(onPressed: (){
+                  child: MateriagilButton(onPressed: (){
                     var result=weight/pow(hight/100,2);
                     print(result.round());
                     Navigator.push(
