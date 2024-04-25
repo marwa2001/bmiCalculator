@@ -41,17 +41,19 @@ class _BMiScreenState extends State<BMiScreen> {
                      onTap: (){
                        setState(() {
                      isMale=true;
+
                        });
                      },
                      child: Container(
-
                          child: Column(
                            mainAxisAlignment: MainAxisAlignment.center,
                            children: [
+                             Expanded
+                             (child:
 
                             Image(image:AssetImage('images/man.png'),
                             height: 60,
-                            width: 60),
+                            width: 60),),
                              SizedBox(
                               height: 10,
                              ),
@@ -64,7 +66,7 @@ class _BMiScreenState extends State<BMiScreen> {
                          ),
                          decoration: BoxDecoration(
                            borderRadius: BorderRadius.circular(10),
-                               color: isMale? Colors.amber:Colors.grey[300],
+                               color: isMale? Colors.orangeAccent:Colors.grey[300],
 
                        ),
                        ),
@@ -84,9 +86,11 @@ class _BMiScreenState extends State<BMiScreen> {
                          child: Column(
                            mainAxisAlignment: MainAxisAlignment.center,
                            children: [
+                              Expanded
+                                 (child:
                              Image(image:AssetImage('images/girl.png'),
                                height: 60,
-                               width: 60),
+                               width: 60),),
                              SizedBox(
                                height: 10),
                              Text('Female',
@@ -98,7 +102,7 @@ class _BMiScreenState extends State<BMiScreen> {
                          ),
                          decoration: BoxDecoration(
                              borderRadius: BorderRadius.circular(10),
-                           color: !isMale? Colors.amber:Colors.grey[300],
+                           color: !isMale? Colors.orangeAccent:Colors.grey[300],
 
                          ),
                        ),
@@ -298,7 +302,7 @@ class _BMiScreenState extends State<BMiScreen> {
 
                   width: double.infinity,
                    height: 60,
-                  child: MateriagilButton(onPressed: (){
+                  child: MaterialButton(onPressed: (){
                     var result=weight/pow(hight/100,2);
                     print(result.round());
                     Navigator.push(
@@ -323,7 +327,7 @@ class _BMiScreenState extends State<BMiScreen> {
 
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: Colors.amber,
+                    color: Colors.orangeAccent,
 
                   ),
                 ),
