@@ -1,7 +1,6 @@
-# untitled2
+# Bmi flutter project
 
-A new Flutter project.
-
+Bmi with animation 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
